@@ -1,0 +1,4 @@
+# Static site: HTML/CSS/JS at repo root (no build step).
+# In Netlify UI, leave Build command empty or set to nothing; Publish directory should be ".".
+[build]
+  publish = "."
