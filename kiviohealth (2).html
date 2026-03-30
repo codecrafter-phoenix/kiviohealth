@@ -357,13 +357,8 @@
           method="POST"
           onsubmit="document.getElementById('submitBtn').disabled=true;document.getElementById('formLoader').style.display='flex';"
         >
-          <!-- Redirect back to this same section after submit -->
-          <input
-            type="hidden"
-            id="rcmNext"
-            name="_next"
-            value="/?submitted=1#contact"
-          >
+          <!-- _next set in script.js (FormSubmit requires full https URL, not a relative path) -->
+          <input type="hidden" id="rcmNext" name="_next" value="">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Free RCM Audit Request (KivioHealth)">
 

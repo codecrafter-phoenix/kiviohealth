@@ -119,3 +119,14 @@ async function submitForm(){
   }
 }
 
+/* FormSubmit.co _next must be an absolute URL or it redirects to formsubmit.co */
+(function(){
+  const next=document.getElementById('rcmNext');
+  if(!next)return;
+  function syncNext(){
+    next.value=new URL('/?submitted=1#contact',window.location.origin).href;
+  }
+  syncNext();
+  const form=document.getElementById('rcmForm');
+  if(form)form.addEventListener('submit',syncNext);
+})();
