@@ -119,12 +119,14 @@ async function submitForm(){
   }
 }
 
-/* FormSubmit.co _next must be an absolute URL or it redirects to formsubmit.co */
+/* FormSubmit.co _next must be a full https URL (relative paths break → formsubmit.co) */
 (function(){
   const next=document.getElementById('rcmNext');
   if(!next)return;
+  const LIVE_SITE='https://glowing-caramel-f09539.netlify.app';
   function syncNext(){
-    next.value=new URL('/?submitted=1#contact',window.location.origin).href;
+    const origin=/^https?:\/\//.test(window.location.origin)?window.location.origin:LIVE_SITE;
+    next.value=new URL('/?submitted=1#contact',origin).href;
   }
   syncNext();
   const form=document.getElementById('rcmForm');
