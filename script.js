@@ -119,16 +119,34 @@ async function submitForm(){
   }
 }
 
-/* FormSubmit.co _next must be a full https URL (relative paths break → formsubmit.co) */
+/* FormSubmit.co: AJAX avoids their hosted “Thanks!” page entirely (stays on your site). */
 (function(){
-  const next=document.getElementById('rcmNext');
-  if(!next)return;
-  const LIVE_SITE='https://glowing-caramel-f09539.netlify.app';
-  function syncNext(){
-    const origin=/^https?:\/\//.test(window.location.origin)?window.location.origin:LIVE_SITE;
-    next.value=new URL('/?submitted=1#contact',origin).href;
-  }
-  syncNext();
   const form=document.getElementById('rcmForm');
-  if(form)form.addEventListener('submit',syncNext);
+  if(!form)return;
+  const AJAX_URL='https://formsubmit.co/ajax/mananpatel.phoenix@gmail.com';
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const btn=document.getElementById('submitBtn'),loader=document.getElementById('formLoader');
+    btn.disabled=true;loader.style.display='flex';
+    try{
+      const res=await fetch(AJAX_URL,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+      let data={};
+      try{data=await res.json();}catch{/* non-JSON */}
+      loader.style.display='none';
+      const failed=data&&(data.success===false||data.success==='false');
+      if(res.ok&&!failed){
+        resetForm();
+        btn.textContent="✅ Request Sent! We'll be in touch shortly.";
+        btn.classList.add('success-state');
+        btn.disabled=true;
+        setTimeout(()=>{btn.textContent='🚀 Request Free RCM Audit — No Obligation';btn.classList.remove('success-state');btn.disabled=false;},6000);
+      }else{
+        btn.disabled=false;
+        setStatus('error',(data&&data.message)||'Something went wrong. Please email info@kiviohealth.com');
+      }
+    }catch(err){
+      loader.style.display='none';btn.disabled=false;
+      setStatus('error','Network error. Please email us at info@kiviohealth.com');console.error(err);
+    }
+  });
 })();

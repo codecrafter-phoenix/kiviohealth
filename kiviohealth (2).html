@@ -343,7 +343,7 @@
     <div class="contact-grid">
       <div class="contact-info reveal">
         <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-item-title">Email</div><div class="contact-item-val"><a href="mailto:info@kiviohealth.com">info@kiviohealth.com</a></div><div class="contact-item-val">Response within 2 business hours</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-item-title">Headquarters</div><div class="contact-item-val">Delaware</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-item-title">Headquarters</div><div class="contact-item-val">Delaware,USA</div></div></div>
         <div class="contact-item"><div class="contact-icon">🕐</div><div><div class="contact-item-title">Business Hours</div><div class="contact-item-val">Monday – Friday: 8:00 AM – 5:00 PM PST</div></div></div>
         <div class="audit-box"><div class="audit-box-title">Free RCM Audit Includes:</div><ul><li>✓ Current denial rate analysis</li><li>✓ AR aging assessment</li><li>✓ Revenue leakage identification</li><li>✓ Technology gap analysis</li><li>✓ Custom optimization roadmap</li></ul></div>
       </div>
@@ -354,10 +354,9 @@
           id="rcmForm"
           action="https://formsubmit.co/mananpatel.phoenix@gmail.com"
           method="POST"
-          onsubmit="document.getElementById('submitBtn').disabled=true;document.getElementById('formLoader').style.display='flex';"
         >
-          <!-- FormSubmit _next: full URL to this live site (also synced in script.js) -->
-          <input type="hidden" id="rcmNext" name="_next" value="https://glowing-caramel-f09539.netlify.app/?submitted=1#contact">
+          <!-- _next: used if JS is off (normal POST → redirect back instead of FormSubmit’s thanks page) -->
+          <input type="hidden" name="_next" value="https://kiviohealth.com/?submitted=1#contact">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Free RCM Audit Request (KivioHealth)">
 

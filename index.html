@@ -354,10 +354,9 @@
           id="rcmForm"
           action="https://formsubmit.co/mananpatel.phoenix@gmail.com"
           method="POST"
-          onsubmit="document.getElementById('submitBtn').disabled=true;document.getElementById('formLoader').style.display='flex';"
         >
-          <!-- FormSubmit _next: full URL to this live site (also synced in script.js) -->
-          <input type="hidden" id="rcmNext" name="_next" value="https://glowing-caramel-f09539.netlify.app/?submitted=1#contact">
+          <!-- _next: used if JS is off (normal POST → redirect back instead of FormSubmit’s thanks page) -->
+          <input type="hidden" name="_next" value="https://kiviohealth.com/?submitted=1#contact">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Free RCM Audit Request (KivioHealth)">
 
