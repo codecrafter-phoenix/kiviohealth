@@ -123,7 +123,7 @@ async function submitForm(){
 (function(){
   const form=document.getElementById('rcmForm');
   if(!form)return;
-  const AJAX_URL='https://formsubmit.co/ajax/mananpatel.phoenix@gmail.com';
+  const AJAX_URL='https://formsubmit.co/ajax/info@kiviohealth.com';
   form.addEventListener('submit',async e=>{
     e.preventDefault();
     const btn=document.getElementById('submitBtn'),loader=document.getElementById('formLoader');
