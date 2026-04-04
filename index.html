@@ -1,409 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KivioHealth — Revenue Cycle Management</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KivioHealth — Revenue Cycle Management</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
 
 </head>
+
 <body>
 
 
-<nav class="navbar" id="navbar" style="background-color: white;">
-  <div class="nav-inner" style="background-color: white;">
-    <a href="#hero" class="nav-logo">
-      <span class="brand-logo-wrap">
-        <img class="brand-logo" src="assets/image.png" alt="KivioHealth">
-      </span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#technology">Technology</a></li>
-      <li><a href="#insights">Insights</a></li>
-      <li><a href="#contact" class="nav-cta">Get Consultation</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<!-- MOBILE NAV DRAWER -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="#services" onclick="closeMobileNav()">Services</a>
-  <a href="#why" onclick="closeMobileNav()">Why Us</a>
-  <a href="#process" onclick="closeMobileNav()">Process</a>
-  <a href="#technology" onclick="closeMobileNav()">Technology</a>
-  <a href="#insights" onclick="closeMobileNav()">Insights</a>
-  <a href="#contact" class="mob-cta" onclick="closeMobileNav()">Get Free Consultation</a>
-</div>
-
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="hero-badge">Trusted by 50+ Healthcare Providers</div>
-      <h1>Maximize Revenue.<br>Minimize <span class="highlight">Admin Burden.</span></h1>
-      <p class="hero-desc">KivioHealth delivers end-to-end Revenue Cycle Management solutions that help healthcare providers reduce claim denials, accelerate reimbursements, and achieve sustainable financial growth — all backed by certified experts and AI-enabled workflows.</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn-primary">
-          <svg width="15" height="15" fill="white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          Request Free Consultation
-        </a>
-        <a href="#services" class="btn-outline">
-          <svg width="15" height="15" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          Explore Services
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><div class="hero-stat-num">99.2%</div><div class="hero-stat-label">Claim Accuracy</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">30%</div><div class="hero-stat-label">Revenue Increase</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">50+</div><div class="hero-stat-label">Providers Served</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Years Experience</div></div>
-      </div>
+  <nav class="navbar" id="navbar" style="background-color: white;">
+    <div class="nav-inner" style="background-color: white;">
+      <a href="#hero" class="nav-logo">
+        <span class="brand-logo-wrap">
+          <img class="brand-logo" src="assets/image.png" alt="KivioHealth">
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact" class="nav-cta">Get Consultation</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hero-card-title">Revenue Cycle Overview</div>
-        <div class="rcm-steps">
-          <div class="rcm-step"><div class="rcm-step-icon" style="background:rgba(59,130,246,.2)">📋</div><div><div class="rcm-step-text">Patient Registration</div><div class="rcm-step-sub">Insurance & demographics capture</div></div></div>
-          <div class="rcm-step"><div class="rcm-step-icon" style="background:rgba(139,92,246,.2)">🔍</div><div><div class="rcm-step-text">Eligibility Verification</div><div class="rcm-step-sub">Real-time benefits check</div></div></div>
-          <div class="rcm-step"><div class="rcm-step-icon" style="background:rgba(16,185,129,.2)">💻</div><div><div class="rcm-step-text">Medical Coding & Billing</div><div class="rcm-step-sub">ICD-10, CPT, HCPCS coding</div></div></div>
-          <div class="rcm-step"><div class="rcm-step-icon" style="background:rgba(245,158,11,.2)">📤</div><div><div class="rcm-step-text">Claim Submission</div><div class="rcm-step-sub">Electronic clean claim filing</div></div></div>
-          <div class="rcm-step"><div class="rcm-step-icon" style="background:rgba(40,167,69,.2)">💰</div><div><div class="rcm-step-text">Payment Posting</div><div class="rcm-step-sub">ERA & EOB reconciliation</div></div></div>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#why" onclick="closeMobileNav()">Why Us</a>
+    <a href="#process" onclick="closeMobileNav()">Process</a>
+    <a href="#technology" onclick="closeMobileNav()">Technology</a>
+    <a href="#insights" onclick="closeMobileNav()">Insights</a>
+    <a href="#contact" class="mob-cta" onclick="closeMobileNav()">Get Free Consultation</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Trusted by 50+ Healthcare Providers</div>
+        <h1>Maximize Revenue.<br>Minimize <span class="highlight">Admin Burden.</span></h1>
+        <p class="hero-desc">KivioHealth delivers end-to-end Revenue Cycle Management solutions that help healthcare
+          providers reduce claim denials, accelerate reimbursements, and achieve sustainable financial growth — all
+          backed by certified experts and AI-enabled workflows.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">
+            <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            Request Free Consultation
+          </a>
+          <a href="#services" class="btn-outline">
+            <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Explore Services
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">99.2%</div>
+            <div class="hero-stat-label">Claim Accuracy</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">30%</div>
+            <div class="hero-stat-label">Revenue Increase</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">50+</div>
+            <div class="hero-stat-label">Providers Served</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">10+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
         </div>
       </div>
-      <div class="hero-metric-cards">
-        <div class="hero-metric"><div class="hero-metric-val green">↑ 28%</div><div class="hero-metric-label">Avg. Collections Increase</div></div>
-        <div class="hero-metric"><div class="hero-metric-val">72h</div><div class="hero-metric-label">Avg. Claim Turnaround</div></div>
-        <div class="hero-metric"><div class="hero-metric-val green">↓ 65%</div><div class="hero-metric-label">Denial Rate Reduction</div></div>
-        <div class="hero-metric"><div class="hero-metric-val">HIPAA</div><div class="hero-metric-label">100% Compliant</div></div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-title">Revenue Cycle Overview</div>
+          <div class="rcm-steps">
+            <div class="rcm-step">
+              <div class="rcm-step-icon" style="background:rgba(59,130,246,.2)">📋</div>
+              <div>
+                <div class="rcm-step-text">Patient Registration</div>
+                <div class="rcm-step-sub">Insurance & demographics capture</div>
+              </div>
+            </div>
+            <div class="rcm-step">
+              <div class="rcm-step-icon" style="background:rgba(139,92,246,.2)">🔍</div>
+              <div>
+                <div class="rcm-step-text">Eligibility Verification</div>
+                <div class="rcm-step-sub">Real-time benefits check</div>
+              </div>
+            </div>
+            <div class="rcm-step">
+              <div class="rcm-step-icon" style="background:rgba(16,185,129,.2)">💻</div>
+              <div>
+                <div class="rcm-step-text">Medical Coding & Billing</div>
+                <div class="rcm-step-sub">ICD-10, CPT, HCPCS coding</div>
+              </div>
+            </div>
+            <div class="rcm-step">
+              <div class="rcm-step-icon" style="background:rgba(245,158,11,.2)">📤</div>
+              <div>
+                <div class="rcm-step-text">Claim Submission</div>
+                <div class="rcm-step-sub">Electronic clean claim filing</div>
+              </div>
+            </div>
+            <div class="rcm-step">
+              <div class="rcm-step-icon" style="background:rgba(40,167,69,.2)">💰</div>
+              <div>
+                <div class="rcm-step-text">Payment Posting</div>
+                <div class="rcm-step-sub">ERA & EOB reconciliation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-metric-cards">
+          <div class="hero-metric">
+            <div class="hero-metric-val green">↑ 28%</div>
+            <div class="hero-metric-label">Avg. Collections Increase</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-val">72h</div>
+            <div class="hero-metric-label">Avg. Claim Turnaround</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-val green">↓ 65%</div>
+            <div class="hero-metric-label">Denial Rate Reduction</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-val">HIPAA</div>
+            <div class="hero-metric-label">100% Compliant</div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- HIPAA BANNER -->
+  <div class="hipaa-banner">
+    <div class="hipaa-inner">
+      <div class="hipaa-badge"><span>✓</span> HIPAA Compliant</div>
+      <div class="hipaa-badge"><span>✓</span> SOC 2 Certified</div>
+      <div class="hipaa-badge"><span>✓</span> AAPC Certified Coders</div>
+      <div class="hipaa-badge"><span>✓</span> 256-bit Data Encryption</div>
+      <div class="hipaa-badge"><span>✓</span> 99.9% Uptime SLA</div>
     </div>
   </div>
-</section>
 
-<!-- HIPAA BANNER -->
-<div class="hipaa-banner">
-  <div class="hipaa-inner">
-    <div class="hipaa-badge"><span>✓</span> HIPAA Compliant</div>
-    <div class="hipaa-badge"><span>✓</span> SOC 2 Certified</div>
-    <div class="hipaa-badge"><span>✓</span> AAPC Certified Coders</div>
-    <div class="hipaa-badge"><span>✓</span> 256-bit Data Encryption</div>
-    <div class="hipaa-badge"><span>✓</span> 99.9% Uptime SLA</div>
+  <!-- TRUST STATS -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid reveal">
+        <div class="trust-item">
+          <div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+            </svg></div>
+          <div class="trust-num">99.2<span>%</span></div>
+          <div class="trust-label">First-Pass Claim Accuracy Rate</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+            </svg></div>
+          <div class="trust-num">30<span>%</span></div>
+          <div class="trust-label">Average Revenue Increase</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+            </svg></div>
+          <div class="trust-num">50<span>+</span></div>
+          <div class="trust-label">Healthcare Providers Supported</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+            </svg></div>
+          <div class="trust-num">10<span>+</span></div>
+          <div class="trust-label">Years of RCM Expertise</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <div class="section-label">What We Offer</div>
+          <h2 class="section-title reveal">Comprehensive RCM<br>Services for Every Specialty</h2>
+        </div>
+        <p class="section-subtitle reveal" style="max-width:360px">From claim submission to payment posting — we manage
+          your entire revenue cycle so you can focus on patient care.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#005EB8" viewBox="0 0 24 24">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+            </svg></div>
+          <h3>Medical Billing</h3>
+          <p>End-to-end billing management from charge capture to payment reconciliation, maximizing your collections
+            with minimal claim rejections.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#8b5cf6" viewBox="0 0 24 24">
+              <path
+                d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z" />
+            </svg></div>
+          <h3>Medical Coding</h3>
+          <p>AAPC-certified coders ensure accurate ICD-10-CM, CPT, and HCPCS coding across all specialties, reducing
+            denials from coding errors.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#10b981" viewBox="0 0 24 24">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z" />
+            </svg></div>
+          <h3>Eligibility Verification</h3>
+          <p>Real-time insurance eligibility and benefits verification to prevent claim denials and patient billing
+            surprises before service delivery.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#f59e0b" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+            </svg></div>
+          <h3>AR Follow-up</h3>
+          <p>Proactive accounts receivable management with systematic follow-up on outstanding claims, reducing your AR
+            days and improving cash flow.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#ef4444" viewBox="0 0 24 24">
+              <path
+                d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3 1.3.58 1.3 1.3-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z" />
+            </svg></div>
+          <h3>Denial Management</h3>
+          <p>Root-cause analysis and systematic denial resolution with preventive workflows that identify and eliminate
+            recurring denial patterns.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#6366f1" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+            </svg></div>
+          <h3>Prior Authorization</h3>
+          <p>Streamlined prior authorization management to minimize treatment delays, track auth statuses, and ensure
+            timely approvals from payers.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#14b8a6" viewBox="0 0 24 24">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" />
+            </svg></div>
+          <h3>Provider Credentialing</h3>
+          <p>Complete credentialing and re-credentialing services to ensure your providers are enrolled with all major
+            payers quickly and accurately.</p><a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><svg width="28" height="28" fill="#0ea5e9" viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.59.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.2 2.47.57 3.59a1 1 0 0 1-.25 1l-2.2 2.2z" />
+            </svg></div>
+          <h3>Virtual Receptionist</h3>
+          <p>Trained front-desk support that answers calls, schedules appointments, and coordinates patient
+            communication in real-time.</p><a href="#virtual-receptionist" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRTUAL RECEPTIONIST -->
+  <section class="rx-section" id="virtual-receptionist">
+    <div class="container">
+      <div class="rx-header">
+        <div class="section-label reveal">Virtual Receptionist Services</div>
+        <h2 class="section-title reveal">Professional Front Desk Support for Your Clinic — 24/7</h2>
+        <p class="section-subtitle reveal" style="max-width:640px;margin-bottom:34px">Enhance patient experience and
+          streamline your front-office operations with our trained virtual receptionists. We act as an extension of your
+          clinic, handling patient communication, appointment scheduling, and administrative coordination — all in
+          real-time.</p>
+      </div>
+
+      <div class="rx-grid">
+        <div class="rx-card reveal">
+          <div class="rx-card-title">What We Offer</div>
+          <div class="rx-subtle">A complete front-office support layer designed to reduce missed calls and keep
+            scheduling moving.</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Patient Call Handling: inbound/outbound communication with a
+                professional, patient-friendly approach.</span></li>
+            <li><span class="rx-check">✓</span><span>Appointment Scheduling &amp; Calendar Management: scheduling,
+                rescheduling, and confirmations.</span></li>
+            <li><span class="rx-check">✓</span><span>Patient Registration &amp; Intake: collect and update demographics,
+                insurance details, and digital intake.</span></li>
+            <li><span class="rx-check">✓</span><span>Insurance &amp; Billing Coordination: basic eligibility
+                verification and clear communication of co-pays and coverage.</span></li>
+            <li><span class="rx-check">✓</span><span>Follow-ups &amp; Patient Engagement: reminders for missed
+                appointments and next-step scheduling.</span></li>
+            <li><span class="rx-check">✓</span><span>Clinic Coordination: real-time updates to in-clinic staff for
+                smooth daily operations.</span></li>
+          </ul>
+        </div>
+
+        <div class="rx-card reveal">
+          <div class="rx-card-title">Key Benefits</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Improved patient satisfaction</span></li>
+            <li><span class="rx-check">✓</span><span>Reduced missed calls and lost revenue</span></li>
+            <li><span class="rx-check">✓</span><span>Lower front-desk staffing costs</span></li>
+            <li><span class="rx-check">✓</span><span>Optimized appointment scheduling</span></li>
+            <li><span class="rx-check">✓</span><span>HIPAA-compliant data handling</span></li>
+            <li><span class="rx-check">✓</span><span>Scalable support as your clinic grows</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rx-grid rx-grid-2">
+        <div class="rx-card reveal">
+          <div class="rx-card-title">Why Choose Us</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Trained in US healthcare workflows</span></li>
+            <li><span class="rx-check">✓</span><span>Excellent English communication (neutral accent)</span></li>
+            <li><span class="rx-check">✓</span><span>Experience with dental &amp; medical practice software</span></li>
+            <li><span class="rx-check">✓</span><span>Dedicated support aligned with your clinic hours</span></li>
+            <li><span class="rx-check">✓</span><span>Integrated with your RCM process for better efficiency</span></li>
+          </ul>
+        </div>
+
+        <div class="rx-card reveal">
+          <div class="rx-card-title">Who Can Benefit</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Dental Clinics</span></li>
+            <li><span class="rx-check">✓</span><span>Medical Practices</span></li>
+            <li><span class="rx-check">✓</span><span>Specialty Clinics</span></li>
+            <li><span class="rx-check">✓</span><span>Group Practices</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rx-grid rx-grid-2">
+        <div class="rx-card reveal">
+          <div class="rx-card-title">Service Model</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Dedicated receptionist model</span></li>
+            <li><span class="rx-check">✓</span><span>Shared support model (cost-effective)</span></li>
+            <li><span class="rx-check">✓</span><span>US time-zone aligned operations</span></li>
+            <li><span class="rx-check">✓</span><span>Custom workflow integration</span></li>
+          </ul>
+        </div>
+
+        <div class="rx-card reveal">
+          <div class="rx-card-title">Add-On Capabilities</div>
+          <ul class="rx-list">
+            <li><span class="rx-check">✓</span><span>Integration with RCM services (billing, AR follow-up)</span></li>
+            <li><span class="rx-check">✓</span><span>Appointment reminders via SMS/email</span></li>
+            <li><span class="rx-check">✓</span><span>Patient feedback collection</span></li>
+            <li><span class="rx-check">✓</span><span>Reporting &amp; performance tracking</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rx-cta reveal">
+        <h3>Let your front desk run smarter — not harder.</h3>
+        <p class="rx-subtle" style="margin:0 auto;max-width:720px">Partner with us to deliver a seamless patient
+          experience while improving operational efficiency.</p>
+        <a href="#contact" class="btn-primary" style="margin-top:14px">Contact us today to get started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div>
+          <div class="section-label reveal">Why KivioHealth</div>
+          <h2 class="section-title reveal">The RCM Partner Healthcare Providers Trust</h2>
+          <p class="section-subtitle reveal" style="margin-bottom:32px">We combine certified expertise with cutting-edge
+            technology to deliver results that move the needle on your bottom line.</p>
+          <ul class="why-points">
+            <li class="why-point reveal">
+              <div class="why-point-check">✓</div>
+              <div>
+                <h4>Certified RCM Experts</h4>
+                <p>Our team of AAPC and AHIMA-certified coders and billing specialists bring deep specialty-specific
+                  knowledge to every account.</p>
+              </div>
+            </li>
+            <li class="why-point reveal">
+              <div class="why-point-check">✓</div>
+              <div>
+                <h4>AI-Enabled Workflow Automation</h4>
+                <p>Machine learning models flag potential denials, auto-correct coding errors, and prioritize your AR
+                  queue for maximum efficiency.</p>
+              </div>
+            </li>
+            <li class="why-point reveal">
+              <div class="why-point-check">✓</div>
+              <div>
+                <h4>100% HIPAA-Compliant Processes</h4>
+                <p>SOC 2-certified infrastructure with end-to-end encryption, regular audits, and strict access controls
+                  protect your patient data.</p>
+              </div>
+            </li>
+            <li class="why-point reveal">
+              <div class="why-point-check">✓</div>
+              <div>
+                <h4>Transparent Real-Time Reporting</h4>
+                <p>24/7 dashboard access with KPI tracking, denial analytics, and custom financial reports keep you
+                  informed at every step.</p>
+              </div>
+            </li>
+            <li class="why-point reveal">
+              <div class="why-point-check">✓</div>
+              <div>
+                <h4>Cost-Efficient Outsourcing Model</h4>
+                <p>Reduce overhead by up to 40% compared to in-house billing staff while improving collections and
+                  reducing administrative burden.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="why-visual reveal">
+          <div class="why-visual-label">Our Differentiators</div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🤖</div>
+            <div>
+              <div class="why-feature-title">AI-Powered Denial Prediction</div>
+              <div class="why-feature-desc">Predictive models flag high-risk claims before submission, reducing denial
+                rates by up to 65%.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">📊</div>
+            <div>
+              <div class="why-feature-title">Real-Time Revenue Analytics</div>
+              <div class="why-feature-desc">Live dashboards tracking collections, AR aging, payer mix, and denial trends
+                with drill-down capabilities.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🌐</div>
+            <div>
+              <div class="why-feature-title">Multi-Specialty Expertise</div>
+              <div class="why-feature-desc">Proven experience across 40+ specialties including cardiology, orthopedics,
+                oncology, and primary care.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">⚡</div>
+            <div>
+              <div class="why-feature-title">Rapid Onboarding in 2 Weeks</div>
+              <div class="why-feature-desc">Structured transition process with dedicated project management ensures
+                minimal disruption to your practice.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🔒</div>
+            <div>
+              <div class="why-feature-title">Zero-Trust Security Framework</div>
+              <div class="why-feature-desc">Military-grade data protection with annual HIPAA audits, BAA compliance, and
+                disaster recovery protocols.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:16px">
+        <div class="section-label" style="justify-content:center">How It Works</div>
+        <h2 class="section-title reveal" style="text-align:center">Your Revenue Cycle,<br>Seamlessly Managed</h2>
+        <p class="section-subtitle reveal" style="text-align:center;margin:0 auto">A transparent, step-by-step process
+          from patient arrival to final reimbursement.</p>
+      </div>
+      <div class="process-steps reveal">
+        <div class="process-step active">
+          <div class="process-step-num">01</div>
+          <div class="process-step-icon">📋</div>
+          <h4>Patient Registration</h4>
+          <p>Demographics, insurance capture, and consent forms</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">02</div>
+          <div class="process-step-icon">✅</div>
+          <h4>Eligibility Check</h4>
+          <p>Real-time benefits verification & co-pay estimates</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">03</div>
+          <div class="process-step-icon">💻</div>
+          <h4>Charge Capture</h4>
+          <p>Accurate ICD-10 & CPT coding by certified coders</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">04</div>
+          <div class="process-step-icon">📤</div>
+          <h4>Claim Submission</h4>
+          <p>Scrubbed, clean claims submitted within 24 hours</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">05</div>
+          <div class="process-step-icon">🔄</div>
+          <h4>AR Management</h4>
+          <p>Proactive follow-up and denial resolution</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">06</div>
+          <div class="process-step-icon">💰</div>
+          <h4>Payment Posting</h4>
+          <p>ERA reconciliation and patient balance billing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="tech-section" id="technology">
+    <div class="container">
+      <div class="tech-grid">
+        <div>
+          <div class="section-label reveal">Technology</div>
+          <h2 class="section-title reveal">Built on Advanced RCM Technology</h2>
+          <p class="section-subtitle reveal" style="margin-bottom:28px">We integrate with all major EHR/EMR platforms
+            and leverage AI automation to deliver faster, more accurate results.</p>
+          <ul class="tech-features reveal">
+            <li class="tech-feature">Seamless EHR/EMR integration (Epic, Cerner, Athena, eCW)</li>
+            <li class="tech-feature">AI-powered denial prediction & prevention engine</li>
+            <li class="tech-feature">Automated eligibility verification in under 2 seconds</li>
+            <li class="tech-feature">Intelligent claim scrubbing with 2,800+ edits</li>
+            <li class="tech-feature">RPA-driven payment posting and reconciliation</li>
+            <li class="tech-feature">Real-time KPI dashboards and custom reporting</li>
+            <li class="tech-feature">HIPAA-compliant cloud infrastructure (AWS GovCloud)</li>
+          </ul>
+        </div>
+        <div class="tech-cards reveal">
+          <div class="tech-card">
+            <div class="tech-card-icon">🏥</div>
+            <h4>Epic & Cerner</h4>
+            <p>Deep EHR integration</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">🤖</div>
+            <h4>AI/ML Engine</h4>
+            <p>Predictive analytics</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">⚡</div>
+            <h4>RPA Automation</h4>
+            <p>Workflow bots</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">☁️</div>
+            <h4>Cloud-First</h4>
+            <p>AWS GovCloud</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">📊</div>
+            <h4>Live Dashboards</h4>
+            <p>Real-time KPIs</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card-icon">🔐</div>
+            <h4>Zero Trust Security</h4>
+            <p>SOC 2 certified</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="insights-section" id="insights">
+    <div class="container">
+      <div class="insights-header">
+        <div>
+          <div class="section-label reveal">Insights & Resources</div>
+          <h2 class="section-title reveal">Stay Ahead in Revenue Cycle</h2>
+        </div>
+        <button class="service-link reveal" style="font-size:.88rem;white-space:nowrap"
+          onclick="alert('More articles coming soon. Stay tuned!')">View All Articles →</button>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card reveal">
+          <div class="insight-img insight-img-1">💡</div>
+          <div class="insight-body">
+            <div class="insight-meta"><span class="insight-tag">Denial Management</span><span class="insight-date">Mar
+                10, 2025</span></div>
+            <h3 class="insight-title">Top 10 Strategies to Reduce Claim Denials in 2025</h3>
+            <p class="insight-excerpt">Discover proven techniques that high-performing billing teams use to achieve
+              first-pass rates above 98% and reduce rework costs.</p><button class="read-more"
+              onclick="openArticle(0)">Read Article →</button>
+          </div>
+        </div>
+        <div class="insight-card reveal">
+          <div class="insight-img insight-img-2">🤖</div>
+          <div class="insight-body">
+            <div class="insight-meta"><span class="insight-tag">Technology</span><span class="insight-date">Feb 28,
+                2025</span></div>
+            <h3 class="insight-title">How AI is Transforming Revenue Cycle Management in Healthcare</h3>
+            <p class="insight-excerpt">Machine learning and RPA are reshaping how healthcare organizations approach
+              billing automation, eligibility verification, and denial prevention.</p><button class="read-more"
+              onclick="openArticle(1)">Read Article →</button>
+          </div>
+        </div>
+        <div class="insight-card reveal">
+          <div class="insight-img insight-img-3">📈</div>
+          <div class="insight-body">
+            <div class="insight-meta"><span class="insight-tag">Compliance</span><span class="insight-date">Feb 15,
+                2025</span></div>
+            <h3 class="insight-title">ICD-11 Transition: What Healthcare Providers Need to Know Now</h3>
+            <p class="insight-excerpt">A comprehensive guide to preparing your billing and coding workflows for the
+              upcoming ICD-11 transition and its financial implications.</p><button class="read-more"
+              onclick="openArticle(2)">Read Article →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE MODAL -->
+  <div id="articleOverlay" class="article-overlay" onclick="closeArticleOutside(event)">
+    <div class="article-modal">
+      <div class="article-modal-header">
+        <button class="article-close" onclick="closeArticle()">✕</button>
+        <div class="article-tag-badge" id="articleTag"></div>
+        <div class="article-date-line" id="articleDate"></div>
+        <h2 class="article-title-text" id="articleTitle"></h2>
+      </div>
+      <div class="article-body-content" id="articleBody"></div>
+      <div class="article-footer-area"><button class="btn-back-article" onclick="closeArticle()">← Back to
+          Insights</button></div>
+    </div>
   </div>
-</div>
 
-<!-- TRUST STATS -->
-<section class="trust-section">
-  <div class="container">
-    <div class="trust-grid reveal">
-      <div class="trust-item"><div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg></div><div class="trust-num">99.2<span>%</span></div><div class="trust-label">First-Pass Claim Accuracy Rate</div></div>
-      <div class="trust-item"><div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div><div class="trust-num">30<span>%</span></div><div class="trust-label">Average Revenue Increase</div></div>
-      <div class="trust-item"><div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div><div class="trust-num">50<span>+</span></div><div class="trust-label">Healthcare Providers Supported</div></div>
-      <div class="trust-item"><div class="trust-icon"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div><div class="trust-num">10<span>+</span></div><div class="trust-label">Years of RCM Expertise</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="services-header">
-      <div>
-        <div class="section-label">What We Offer</div>
-        <h2 class="section-title reveal">Comprehensive RCM<br>Services for Every Specialty</h2>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-heading">
+        <div class="section-label" style="justify-content:center">Get In Touch</div>
+        <h2 class="section-title reveal" style="text-align:center">Start Your Free RCM Assessment</h2>
+        <p class="section-subtitle reveal" style="text-align:center;margin:0 auto">Let our experts analyze your current
+          revenue cycle and identify opportunities to increase your collections by up to 30%.</p>
+        <p class="contact-email-line reveal">📧 Reach us directly at <a
+            href="mailto:info@kiviohealth.com">info@kiviohealth.com</a> | 📞 <a href="tel:+13022044505">+1 (302)
+            204-4505</a></p>
       </div>
-      <p class="section-subtitle reveal" style="max-width:360px">From claim submission to payment posting — we manage your entire revenue cycle so you can focus on patient care.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#005EB8" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div><h3>Medical Billing</h3><p>End-to-end billing management from charge capture to payment reconciliation, maximizing your collections with minimal claim rejections.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#8b5cf6" viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg></div><h3>Medical Coding</h3><p>AAPC-certified coders ensure accurate ICD-10-CM, CPT, and HCPCS coding across all specialties, reducing denials from coding errors.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#10b981" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg></div><h3>Eligibility Verification</h3><p>Real-time insurance eligibility and benefits verification to prevent claim denials and patient billing surprises before service delivery.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#f59e0b" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></div><h3>AR Follow-up</h3><p>Proactive accounts receivable management with systematic follow-up on outstanding claims, reducing your AR days and improving cash flow.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#ef4444" viewBox="0 0 24 24"><path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3 1.3.58 1.3 1.3-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"/></svg></div><h3>Denial Management</h3><p>Root-cause analysis and systematic denial resolution with preventive workflows that identify and eliminate recurring denial patterns.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#6366f1" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div><h3>Prior Authorization</h3><p>Streamlined prior authorization management to minimize treatment delays, track auth statuses, and ensure timely approvals from payers.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#14b8a6" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div><h3>Provider Credentialing</h3><p>Complete credentialing and re-credentialing services to ensure your providers are enrolled with all major payers quickly and accurately.</p><a href="#contact" class="service-link">Learn More →</a></div>
-      <div class="service-card reveal"><div class="service-card-icon"><svg width="28" height="28" fill="#0ea5e9" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.59.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.2 2.47.57 3.59a1 1 0 0 1-.25 1l-2.2 2.2z"/></svg></div><h3>Virtual Receptionist</h3><p>Trained front-desk support that answers calls, schedules appointments, and coordinates patient communication in real-time.</p><a href="#virtual-receptionist" class="service-link">Learn More →</a></div>
-    </div>
-  </div>
-</section>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-item-title">Email</div>
+              <div class="contact-item-val"><a href="mailto:info@kiviohealth.com">info@kiviohealth.com</a></div>
+              <div class="contact-item-val">Response within 2 business hours</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-item-title">Phone</div>
+              <div class="contact-item-val"><a href="tel:+13022044505">+1 (302) 204-4505</a></div>
+              <div class="contact-item-val">Mon-Fri, 8 AM – 5 PM PST</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-item-title">Headquarters</div>
+              <div class="contact-item-val">Delaware, USA</div>
+            </div>
+          </div>
+          <div class="audit-box">
+            <div class="audit-box-title">Free RCM Audit Includes:</div>
+            <ul>
+              <li>✓ Current denial rate analysis</li>
+              <li>✓ AR aging assessment</li>
+              <li>✓ Revenue leakage identification</li>
+              <li>✓ Technology gap analysis</li>
+              <li>✓ Custom optimization roadmap</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-title">Request Free Consultation</div>
+          <div class="form-subtitle">Complete the form below and our RCM specialists will reach out within 2 business
+            hours.</div>
+          <form id="rcmForm" action="https://formsubmit.co/info@kiviohealth.com" method="POST">
+            <!-- _next: used if JS is off (normal POST → redirect back instead of FormSubmit’s thanks page) -->
+            <input type="hidden" name="_next" value="https://kiviohealth.com/?submitted=1#contact">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Free RCM Audit Request (KivioHealth)">
 
-<!-- VIRTUAL RECEPTIONIST -->
-<section class="rx-section" id="virtual-receptionist">
-  <div class="container">
-    <div class="rx-header">
-      <div class="section-label reveal">Virtual Receptionist Services</div>
-      <h2 class="section-title reveal">Professional Front Desk Support for Your Clinic — 24/7</h2>
-      <p class="section-subtitle reveal" style="max-width:640px;margin-bottom:34px">Enhance patient experience and streamline your front-office operations with our trained virtual receptionists. We act as an extension of your clinic, handling patient communication, appointment scheduling, and administrative coordination — all in real-time.</p>
-    </div>
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input id="rcmFirstName" name="firstName" type="text"
+                  placeholder="John" required></div>
+              <div class="form-group"><label>Last Name *</label><input id="rcmLastName" name="lastName" type="text"
+                  placeholder="Smith" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Work Email *</label><input id="rcmEmail" name="email" type="email"
+                  placeholder="john@practice.com" required></div>
+              <div class="form-group"><label>Phone Number *</label><input id="rcmPhone" name="phone" type="tel"
+                  placeholder="+1 (XXX) XXX-XXXX" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Practice Name *</label><input id="rcmPractice" name="practice" type="text"
+                  placeholder="Your Practice Name" required></div>
+              <div class="form-group"><label>Specialty</label><select id="rcmSpecialty" name="specialty">
+                  <option value="">Select Specialty</option>
+                  <option>Cardiology</option>
+                  <option>Orthopedics</option>
+                  <option>Primary Care</option>
+                  <option>Oncology</option>
+                  <option>Neurology</option>
+                  <option>Radiology</option>
+                  <option>Pediatrics</option>
+                  <option>Other</option>
+                </select></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Number of Providers</label><select id="rcmProviders" name="providers">
+                  <option value="">Select Range</option>
+                  <option>1–5 Providers</option>
+                  <option>6–20 Providers</option>
+                  <option>21–50 Providers</option>
+                  <option>51–100 Providers</option>
+                  <option>100+ Providers</option>
+                </select></div>
+              <div class="form-group"><label>Monthly Claim Volume</label><select id="rcmClaimVol" name="claimVol">
+                  <option value="">Select Range</option>
+                  <option>Under 500</option>
+                  <option>500 – 2,000</option>
+                  <option>2,000 – 10,000</option>
+                  <option>10,000+</option>
+                </select></div>
+            </div>
+            <div class="form-group"><label>Primary RCM Challenge</label><textarea id="rcmChallenge" name="challenge"
+                placeholder="Tell us about your biggest billing and revenue cycle challenges..."></textarea></div>
 
-    <div class="rx-grid">
-      <div class="rx-card reveal">
-        <div class="rx-card-title">What We Offer</div>
-        <div class="rx-subtle">A complete front-office support layer designed to reduce missed calls and keep scheduling moving.</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Patient Call Handling: inbound/outbound communication with a professional, patient-friendly approach.</span></li>
-          <li><span class="rx-check">✓</span><span>Appointment Scheduling &amp; Calendar Management: scheduling, rescheduling, and confirmations.</span></li>
-          <li><span class="rx-check">✓</span><span>Patient Registration &amp; Intake: collect and update demographics, insurance details, and digital intake.</span></li>
-          <li><span class="rx-check">✓</span><span>Insurance &amp; Billing Coordination: basic eligibility verification and clear communication of co-pays and coverage.</span></li>
-          <li><span class="rx-check">✓</span><span>Follow-ups &amp; Patient Engagement: reminders for missed appointments and next-step scheduling.</span></li>
-          <li><span class="rx-check">✓</span><span>Clinic Coordination: real-time updates to in-clinic staff for smooth daily operations.</span></li>
-        </ul>
-      </div>
-
-      <div class="rx-card reveal">
-        <div class="rx-card-title">Key Benefits</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Improved patient satisfaction</span></li>
-          <li><span class="rx-check">✓</span><span>Reduced missed calls and lost revenue</span></li>
-          <li><span class="rx-check">✓</span><span>Lower front-desk staffing costs</span></li>
-          <li><span class="rx-check">✓</span><span>Optimized appointment scheduling</span></li>
-          <li><span class="rx-check">✓</span><span>HIPAA-compliant data handling</span></li>
-          <li><span class="rx-check">✓</span><span>Scalable support as your clinic grows</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="rx-grid rx-grid-2">
-      <div class="rx-card reveal">
-        <div class="rx-card-title">Why Choose Us</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Trained in US healthcare workflows</span></li>
-          <li><span class="rx-check">✓</span><span>Excellent English communication (neutral accent)</span></li>
-          <li><span class="rx-check">✓</span><span>Experience with dental &amp; medical practice software</span></li>
-          <li><span class="rx-check">✓</span><span>Dedicated support aligned with your clinic hours</span></li>
-          <li><span class="rx-check">✓</span><span>Integrated with your RCM process for better efficiency</span></li>
-        </ul>
-      </div>
-
-      <div class="rx-card reveal">
-        <div class="rx-card-title">Who Can Benefit</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Dental Clinics</span></li>
-          <li><span class="rx-check">✓</span><span>Medical Practices</span></li>
-          <li><span class="rx-check">✓</span><span>Specialty Clinics</span></li>
-          <li><span class="rx-check">✓</span><span>Group Practices</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="rx-grid rx-grid-2">
-      <div class="rx-card reveal">
-        <div class="rx-card-title">Service Model</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Dedicated receptionist model</span></li>
-          <li><span class="rx-check">✓</span><span>Shared support model (cost-effective)</span></li>
-          <li><span class="rx-check">✓</span><span>US time-zone aligned operations</span></li>
-          <li><span class="rx-check">✓</span><span>Custom workflow integration</span></li>
-        </ul>
-      </div>
-
-      <div class="rx-card reveal">
-        <div class="rx-card-title">Add-On Capabilities</div>
-        <ul class="rx-list">
-          <li><span class="rx-check">✓</span><span>Integration with RCM services (billing, AR follow-up)</span></li>
-          <li><span class="rx-check">✓</span><span>Appointment reminders via SMS/email</span></li>
-          <li><span class="rx-check">✓</span><span>Patient feedback collection</span></li>
-          <li><span class="rx-check">✓</span><span>Reporting &amp; performance tracking</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="rx-cta reveal">
-      <h3>Let your front desk run smarter — not harder.</h3>
-      <p class="rx-subtle" style="margin:0 auto;max-width:720px">Partner with us to deliver a seamless patient experience while improving operational efficiency.</p>
-      <a href="#contact" class="btn-primary" style="margin-top:14px">Contact us today to get started</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE -->
-<section class="why-section" id="why">
-  <div class="container">
-    <div class="why-grid">
-      <div>
-        <div class="section-label reveal">Why KivioHealth</div>
-        <h2 class="section-title reveal">The RCM Partner Healthcare Providers Trust</h2>
-        <p class="section-subtitle reveal" style="margin-bottom:32px">We combine certified expertise with cutting-edge technology to deliver results that move the needle on your bottom line.</p>
-        <ul class="why-points">
-          <li class="why-point reveal"><div class="why-point-check">✓</div><div><h4>Certified RCM Experts</h4><p>Our team of AAPC and AHIMA-certified coders and billing specialists bring deep specialty-specific knowledge to every account.</p></div></li>
-          <li class="why-point reveal"><div class="why-point-check">✓</div><div><h4>AI-Enabled Workflow Automation</h4><p>Machine learning models flag potential denials, auto-correct coding errors, and prioritize your AR queue for maximum efficiency.</p></div></li>
-          <li class="why-point reveal"><div class="why-point-check">✓</div><div><h4>100% HIPAA-Compliant Processes</h4><p>SOC 2-certified infrastructure with end-to-end encryption, regular audits, and strict access controls protect your patient data.</p></div></li>
-          <li class="why-point reveal"><div class="why-point-check">✓</div><div><h4>Transparent Real-Time Reporting</h4><p>24/7 dashboard access with KPI tracking, denial analytics, and custom financial reports keep you informed at every step.</p></div></li>
-          <li class="why-point reveal"><div class="why-point-check">✓</div><div><h4>Cost-Efficient Outsourcing Model</h4><p>Reduce overhead by up to 40% compared to in-house billing staff while improving collections and reducing administrative burden.</p></div></li>
-        </ul>
-      </div>
-      <div class="why-visual reveal">
-        <div class="why-visual-label">Our Differentiators</div>
-        <div class="why-feature"><div class="why-feature-icon">🤖</div><div><div class="why-feature-title">AI-Powered Denial Prediction</div><div class="why-feature-desc">Predictive models flag high-risk claims before submission, reducing denial rates by up to 65%.</div></div></div>
-        <div class="why-feature"><div class="why-feature-icon">📊</div><div><div class="why-feature-title">Real-Time Revenue Analytics</div><div class="why-feature-desc">Live dashboards tracking collections, AR aging, payer mix, and denial trends with drill-down capabilities.</div></div></div>
-        <div class="why-feature"><div class="why-feature-icon">🌐</div><div><div class="why-feature-title">Multi-Specialty Expertise</div><div class="why-feature-desc">Proven experience across 40+ specialties including cardiology, orthopedics, oncology, and primary care.</div></div></div>
-        <div class="why-feature"><div class="why-feature-icon">⚡</div><div><div class="why-feature-title">Rapid Onboarding in 2 Weeks</div><div class="why-feature-desc">Structured transition process with dedicated project management ensures minimal disruption to your practice.</div></div></div>
-        <div class="why-feature"><div class="why-feature-icon">🔒</div><div><div class="why-feature-title">Zero-Trust Security Framework</div><div class="why-feature-desc">Military-grade data protection with annual HIPAA audits, BAA compliance, and disaster recovery protocols.</div></div></div>
+            <button class="form-submit" id="submitBtn" type="submit">Request Free RCM Audit — No Obligation</button>
+            <p class="form-privacy">🔒 Your information is 100% confidential and HIPAA-protected</p>
+            <div class="form-loader" id="formLoader">
+              <div class="form-loader-spin"></div>
+              <div class="form-loader-text">Sending your request…</div>
+              <div class="form-loader-sub">Please wait a moment</div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROCESS -->
-<section class="process-section" id="process">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:16px">
-      <div class="section-label" style="justify-content:center">How It Works</div>
-      <h2 class="section-title reveal" style="text-align:center">Your Revenue Cycle,<br>Seamlessly Managed</h2>
-      <p class="section-subtitle reveal" style="text-align:center;margin:0 auto">A transparent, step-by-step process from patient arrival to final reimbursement.</p>
-    </div>
-    <div class="process-steps reveal">
-      <div class="process-step active"><div class="process-step-num">01</div><div class="process-step-icon">📋</div><h4>Patient Registration</h4><p>Demographics, insurance capture, and consent forms</p></div>
-      <div class="process-step"><div class="process-step-num">02</div><div class="process-step-icon">✅</div><h4>Eligibility Check</h4><p>Real-time benefits verification & co-pay estimates</p></div>
-      <div class="process-step"><div class="process-step-num">03</div><div class="process-step-icon">💻</div><h4>Charge Capture</h4><p>Accurate ICD-10 & CPT coding by certified coders</p></div>
-      <div class="process-step"><div class="process-step-num">04</div><div class="process-step-icon">📤</div><h4>Claim Submission</h4><p>Scrubbed, clean claims submitted within 24 hours</p></div>
-      <div class="process-step"><div class="process-step-num">05</div><div class="process-step-icon">🔄</div><h4>AR Management</h4><p>Proactive follow-up and denial resolution</p></div>
-      <div class="process-step"><div class="process-step-num">06</div><div class="process-step-icon">💰</div><h4>Payment Posting</h4><p>ERA reconciliation and patient balance billing</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section class="tech-section" id="technology">
-  <div class="container">
-    <div class="tech-grid">
-      <div>
-        <div class="section-label reveal">Technology</div>
-        <h2 class="section-title reveal">Built on Advanced RCM Technology</h2>
-        <p class="section-subtitle reveal" style="margin-bottom:28px">We integrate with all major EHR/EMR platforms and leverage AI automation to deliver faster, more accurate results.</p>
-        <ul class="tech-features reveal">
-          <li class="tech-feature">Seamless EHR/EMR integration (Epic, Cerner, Athena, eCW)</li>
-          <li class="tech-feature">AI-powered denial prediction & prevention engine</li>
-          <li class="tech-feature">Automated eligibility verification in under 2 seconds</li>
-          <li class="tech-feature">Intelligent claim scrubbing with 2,800+ edits</li>
-          <li class="tech-feature">RPA-driven payment posting and reconciliation</li>
-          <li class="tech-feature">Real-time KPI dashboards and custom reporting</li>
-          <li class="tech-feature">HIPAA-compliant cloud infrastructure (AWS GovCloud)</li>
-        </ul>
-      </div>
-      <div class="tech-cards reveal">
-        <div class="tech-card"><div class="tech-card-icon">🏥</div><h4>Epic & Cerner</h4><p>Deep EHR integration</p></div>
-        <div class="tech-card"><div class="tech-card-icon">🤖</div><h4>AI/ML Engine</h4><p>Predictive analytics</p></div>
-        <div class="tech-card"><div class="tech-card-icon">⚡</div><h4>RPA Automation</h4><p>Workflow bots</p></div>
-        <div class="tech-card"><div class="tech-card-icon">☁️</div><h4>Cloud-First</h4><p>AWS GovCloud</p></div>
-        <div class="tech-card"><div class="tech-card-icon">📊</div><h4>Live Dashboards</h4><p>Real-time KPIs</p></div>
-        <div class="tech-card"><div class="tech-card-icon">🔐</div><h4>Zero Trust Security</h4><p>SOC 2 certified</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INSIGHTS -->
-<section class="insights-section" id="insights">
-  <div class="container">
-    <div class="insights-header">
-      <div>
-        <div class="section-label reveal">Insights & Resources</div>
-        <h2 class="section-title reveal">Stay Ahead in Revenue Cycle</h2>
-      </div>
-      <button class="service-link reveal" style="font-size:.88rem;white-space:nowrap" onclick="alert('More articles coming soon. Stay tuned!')">View All Articles →</button>
-    </div>
-    <div class="insights-grid">
-      <div class="insight-card reveal"><div class="insight-img insight-img-1">💡</div><div class="insight-body"><div class="insight-meta"><span class="insight-tag">Denial Management</span><span class="insight-date">Mar 10, 2025</span></div><h3 class="insight-title">Top 10 Strategies to Reduce Claim Denials in 2025</h3><p class="insight-excerpt">Discover proven techniques that high-performing billing teams use to achieve first-pass rates above 98% and reduce rework costs.</p><button class="read-more" onclick="openArticle(0)">Read Article →</button></div></div>
-      <div class="insight-card reveal"><div class="insight-img insight-img-2">🤖</div><div class="insight-body"><div class="insight-meta"><span class="insight-tag">Technology</span><span class="insight-date">Feb 28, 2025</span></div><h3 class="insight-title">How AI is Transforming Revenue Cycle Management in Healthcare</h3><p class="insight-excerpt">Machine learning and RPA are reshaping how healthcare organizations approach billing automation, eligibility verification, and denial prevention.</p><button class="read-more" onclick="openArticle(1)">Read Article →</button></div></div>
-      <div class="insight-card reveal"><div class="insight-img insight-img-3">📈</div><div class="insight-body"><div class="insight-meta"><span class="insight-tag">Compliance</span><span class="insight-date">Feb 15, 2025</span></div><h3 class="insight-title">ICD-11 Transition: What Healthcare Providers Need to Know Now</h3><p class="insight-excerpt">A comprehensive guide to preparing your billing and coding workflows for the upcoming ICD-11 transition and its financial implications.</p><button class="read-more" onclick="openArticle(2)">Read Article →</button></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ARTICLE MODAL -->
-<div id="articleOverlay" class="article-overlay" onclick="closeArticleOutside(event)">
-  <div class="article-modal">
-    <div class="article-modal-header">
-      <button class="article-close" onclick="closeArticle()">✕</button>
-      <div class="article-tag-badge" id="articleTag"></div>
-      <div class="article-date-line" id="articleDate"></div>
-      <h2 class="article-title-text" id="articleTitle"></h2>
-    </div>
-    <div class="article-body-content" id="articleBody"></div>
-    <div class="article-footer-area"><button class="btn-back-article" onclick="closeArticle()">← Back to Insights</button></div>
-  </div>
-</div>
-
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div class="contact-heading">
-      <div class="section-label" style="justify-content:center">Get In Touch</div>
-      <h2 class="section-title reveal" style="text-align:center">Start Your Free RCM Assessment</h2>
-      <p class="section-subtitle reveal" style="text-align:center;margin:0 auto">Let our experts analyze your current revenue cycle and identify opportunities to increase your collections by up to 30%.</p>
-      <p class="contact-email-line reveal">📧 Reach us directly at <a href="mailto:info@kiviohealth.com">info@kiviohealth.com</a> | 📞 <a href="tel:+13022044505">+1 (302) 204-4505</a></p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-item-title">Email</div><div class="contact-item-val"><a href="mailto:info@kiviohealth.com">info@kiviohealth.com</a></div><div class="contact-item-val">Response within 2 business hours</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-item-title">Phone</div><div class="contact-item-val"><a href="tel:+13022044505">+1 (302) 204-4505</a></div><div class="contact-item-val">Mon-Fri, 8 AM – 5 PM PST</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-item-title">Headquarters</div><div class="contact-item-val">Delaware, USA</div></div></div>
-        <div class="contact-item"><div class="contact-icon">🕐</div><div><div class="contact-item-title">Business Hours</div><div class="contact-item-val">Monday – Friday: 8:00 AM – 5:00 PM PST</div></div></div>
-        <div class="audit-box"><div class="audit-box-title">Free RCM Audit Includes:</div><ul><li>✓ Current denial rate analysis</li><li>✓ AR aging assessment</li><li>✓ Revenue leakage identification</li><li>✓ Technology gap analysis</li><li>✓ Custom optimization roadmap</li></ul></div>
-      </div>
-      <div class="contact-form reveal">
-        <div class="form-title">Request Free Consultation</div>
-        <div class="form-subtitle">Complete the form below and our RCM specialists will reach out within 2 business hours.</div>
-        <form
-          id="rcmForm"
-          action="https://formsubmit.co/info@kiviohealth.com"
-          method="POST"
-        >
-          <!-- _next: used if JS is off (normal POST → redirect back instead of FormSubmit’s thanks page) -->
-          <input type="hidden" name="_next" value="https://kiviohealth.com/?submitted=1#contact">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="Free RCM Audit Request (KivioHealth)">
-
-          <div class="form-row"><div class="form-group"><label>First Name *</label><input id="rcmFirstName" name="firstName" type="text" placeholder="John" required></div><div class="form-group"><label>Last Name *</label><input id="rcmLastName" name="lastName" type="text" placeholder="Smith" required></div></div>
-          <div class="form-row"><div class="form-group"><label>Work Email *</label><input id="rcmEmail" name="email" type="email" placeholder="john@practice.com" required></div><div class="form-group"><label>Phone Number *</label><input id="rcmPhone" name="phone" type="tel" placeholder="+1 (XXX) XXX-XXXX" required></div></div>
-          <div class="form-row"><div class="form-group"><label>Practice Name *</label><input id="rcmPractice" name="practice" type="text" placeholder="Your Practice Name" required></div><div class="form-group"><label>Specialty</label><select id="rcmSpecialty" name="specialty"><option value="">Select Specialty</option><option>Cardiology</option><option>Orthopedics</option><option>Primary Care</option><option>Oncology</option><option>Neurology</option><option>Radiology</option><option>Pediatrics</option><option>Other</option></select></div></div>
-          <div class="form-row"><div class="form-group"><label>Number of Providers</label><select id="rcmProviders" name="providers"><option value="">Select Range</option><option>1–5 Providers</option><option>6–20 Providers</option><option>21–50 Providers</option><option>51–100 Providers</option><option>100+ Providers</option></select></div><div class="form-group"><label>Monthly Claim Volume</label><select id="rcmClaimVol" name="claimVol"><option value="">Select Range</option><option>Under 500</option><option>500 – 2,000</option><option>2,000 – 10,000</option><option>10,000+</option></select></div></div>
-          <div class="form-group"><label>Primary RCM Challenge</label><textarea id="rcmChallenge" name="challenge" placeholder="Tell us about your biggest billing and revenue cycle challenges..."></textarea></div>
-
-          <button class="form-submit" id="submitBtn" type="submit">Request Free RCM Audit — No Obligation</button>
-          <p class="form-privacy">🔒 Your information is 100% confidential and HIPAA-protected</p>
-          <div class="form-loader" id="formLoader"><div class="form-loader-spin"></div><div class="form-loader-text">Sending your request…</div><div class="form-loader-sub">Please wait a moment</div></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a href="#hero" class="footer-logo">
-          <!-- <span class="brand-logo-wrap">
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#hero" class="footer-logo">
+            <!-- <span class="brand-logo-wrap">
             <img class="brand-logo brand-logo--footer" src="assets/image.png" alt="KivioHealth">
           </span> -->
-        </a>
-        <p class="footer-desc">KivioHealth delivers premium Revenue Cycle Management solutions that empower healthcare providers to maximize collections, reduce administrative burden, and achieve financial excellence.</p>
-        <div class="footer-social">
-          <a class="social-btn" href="#">in</a><a class="social-btn" href="#">𝕏</a><a class="social-btn" href="#">f</a><a class="social-btn" href="#">▶</a>
+          </a>
+          <p class="footer-desc">KivioHealth delivers premium Revenue Cycle Management solutions that empower healthcare
+            providers to maximize collections, reduce administrative burden, and achieve financial excellence.</p>
+          <div class="footer-social">
+            <a class="social-btn" href="#">in</a><a class="social-btn" href="#">𝕏</a><a class="social-btn"
+              href="#">f</a><a class="social-btn" href="#">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Medical Billing</a></li>
+            <li><a href="#services">Medical Coding</a></li>
+            <li><a href="#services">Eligibility Verification</a></li>
+            <li><a href="#services">AR Follow-up</a></li>
+            <li><a href="#services">Denial Management</a></li>
+            <li><a href="#services">Prior Authorization</a></li>
+            <li><a href="#services">Credentialing</a></li>
+            <li><a href="#virtual-receptionist">Virtual Receptionist</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About KivioHealth</a></li>
+            <li><a href="#">Leadership Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News & Press</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="#services">Medical Billing</a></li><li><a href="#services">Medical Coding</a></li><li><a href="#services">Eligibility Verification</a></li><li><a href="#services">AR Follow-up</a></li><li><a href="#services">Denial Management</a></li><li><a href="#services">Prior Authorization</a></li><li><a href="#services">Credentialing</a></li><li><a href="#virtual-receptionist">Virtual Receptionist</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About KivioHealth</a></li><li><a href="#">Leadership Team</a></li><li><a href="#">Careers</a></li><li><a href="#">News & Press</a></li><li><a href="#">Partners</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+      <div class="footer-bottom">
+        <p>© 2026 KivioHealth, Inc. All rights reserved. HIPAA Compliant.</p>
+        <div class="footer-badges"><span class="footer-badge">HIPAA</span><span class="footer-badge">SOC 2</span><span
+            class="footer-badge">AAPC</span><span class="footer-badge">AHIMA</span></div>
+      </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 KivioHealth, Inc. All rights reserved. HIPAA Compliant.</p>
-      <div class="footer-badges"><span class="footer-badge">HIPAA</span><span class="footer-badge">SOC 2</span><span class="footer-badge">AAPC</span><span class="footer-badge">AHIMA</span></div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
+
 </html>
