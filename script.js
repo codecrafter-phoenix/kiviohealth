@@ -3,7 +3,7 @@ const navbar=document.getElementById('navbar');
 window.addEventListener('scroll',()=>{
   navbar.classList.toggle('scrolled',window.scrollY>40);
   document.getElementById('scrollTop').classList.toggle('visible',window.scrollY>400);
-});
+},{passive:true});
 
 /* HAMBURGER */
 const hamburger=document.getElementById('hamburger');
@@ -11,8 +11,9 @@ const mobileNav=document.getElementById('mobileNav');
 hamburger.addEventListener('click',()=>{
   const isOpen=mobileNav.classList.toggle('open');
   hamburger.classList.toggle('open',isOpen);
+  hamburger.setAttribute('aria-expanded',String(isOpen));
 });
-function closeMobileNav(){mobileNav.classList.remove('open');hamburger.classList.remove('open');}
+function closeMobileNav(){mobileNav.classList.remove('open');hamburger.classList.remove('open');hamburger.setAttribute('aria-expanded','false');}
 document.addEventListener('click',e=>{
   if(!navbar.contains(e.target)&&!mobileNav.contains(e.target))closeMobileNav();
 });
@@ -20,7 +21,9 @@ document.addEventListener('click',e=>{
 /* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
-    const t=document.querySelector(a.getAttribute('href'));
+    const href=a.getAttribute('href');
+    if(!href||href==='#')return;
+    const t=document.querySelector(href);
     if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
   });
 });
@@ -90,7 +93,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeArticle();});
 /* FORM */
 function resetForm(){
   ['rcmFirstName','rcmLastName','rcmEmail','rcmPhone','rcmPractice','rcmChallenge'].forEach(id=>document.getElementById(id).value='');
-  ['rcmSpecialty','rcmProviders','rcmClaimVol'].forEach(id=>document.getElementById(id).selectedIndex=0);
+  ['rcmSpecialty','rcmProviders','rcmCollections','rcmReferralSource'].forEach(id=>document.getElementById(id).selectedIndex=0);
 }
 function setStatus(type,msg){
   let el=document.getElementById('formStatusMsg');
@@ -102,14 +105,14 @@ function setStatus(type,msg){
 async function submitForm(){
   const f=id=>document.getElementById(id).value.trim();
   const firstName=f('rcmFirstName'),lastName=f('rcmLastName'),email=f('rcmEmail'),phone=f('rcmPhone'),practice=f('rcmPractice');
-  const specialty=document.getElementById('rcmSpecialty').value,providers=document.getElementById('rcmProviders').value,claimVol=document.getElementById('rcmClaimVol').value,challenge=f('rcmChallenge');
+  const specialty=document.getElementById('rcmSpecialty').value,providers=document.getElementById('rcmProviders').value,collections=document.getElementById('rcmCollections').value,referralSource=document.getElementById('rcmReferralSource').value,challenge=f('rcmChallenge');
   if(!firstName||!lastName||!email||!phone||!practice){setStatus('error','Please fill in all required fields marked with *');return;}
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){setStatus('error','Please enter a valid email address.');return;}
   const btn=document.getElementById('submitBtn'),loader=document.getElementById('formLoader');
   btn.disabled=true;loader.style.display='flex';
   const GAS_URL='YOUR_GOOGLE_APPS_SCRIPT_URL'; // Paste your Google Apps Script URL here
   try{
-    await fetch(GAS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName,lastName,email,phone,practice,specialty:specialty||'Not specified',providers:providers||'Not specified',claimVol:claimVol||'Not specified',challenge:challenge||'Not provided'})});
+    await fetch(GAS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName,lastName,email,phone,practice,specialty:specialty||'Not specified',providers:providers||'Not specified',collections:collections||'Not specified',referralSource:referralSource||'Not specified',challenge:challenge||'Not provided'})});
     loader.style.display='none';resetForm();
     btn.textContent="✅ Request Sent! We'll be in touch shortly.";btn.classList.add('success-state');btn.disabled=true;
     setTimeout(()=>{btn.textContent='🚀 Request Free RCM Audit — No Obligation';btn.classList.remove('success-state');btn.disabled=false;},6000);
